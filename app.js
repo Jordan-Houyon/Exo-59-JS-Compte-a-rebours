@@ -1,4 +1,4 @@
-1let getTime=document.getElementById("time");
+let getTime=document.getElementById("time");
      getTime.style.margin= "10rem";
      getTime.style.fontSize= "5rem";
 
@@ -12,7 +12,7 @@ let timer= setInterval(function () {
         getTime.innerText = "Compte à rebours terminé ! ";
         clearInterval(timer)
     }
-}
+
 
 if(sec%2 == 0) {
     getTime.style.animationName = "color";
@@ -23,5 +23,4 @@ else {
     getTime.style.animationName = "color";
     getTime.style.animationDuration = "1s";
     getTime.style.color = "red";
-}
-},1000)
+};
